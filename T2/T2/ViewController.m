@@ -36,7 +36,7 @@
 
 - (void)alarmAction:(NSNotification *)notification
 {
-    [self scheduleAlarmWithText:[notification.userInfo objectForKey:@"title"] andDate:(NSDate *)[NSDate dateWithTimeIntervalSinceNow:10.0]];
+    [self scheduleAlarmWithText:[notification.userInfo objectForKey:@"title"] andDate:(NSDate *)[NSDate dateWithTimeIntervalSinceNow:15*60]];
 }
 
 - (IBAction)setAlarmPressed:(UIButton *)sender {
