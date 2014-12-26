@@ -25,11 +25,6 @@ NSString *kAlarmNotificationKey = @"kAlarmNotificationKey";
         [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeSound categories:nil]];
     }
     
-    UILocalNotification *localNotif = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
-    if (localNotif) {
-        [self application:application didReceiveLocalNotification:localNotif];
-    }
-    
     return YES;
 }
 
